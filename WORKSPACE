@@ -51,6 +51,7 @@ stack_snapshot(
 # which was already initialized by rules_haskell_dependencies above.
 load(
     "@io_tweag_rules_nixpkgs//nixpkgs:nixpkgs.bzl",
+    "nixpkgs_cc_configure",
     "nixpkgs_git_repository",
     "nixpkgs_package",
     "nixpkgs_python_configure",
@@ -69,6 +70,8 @@ nixpkgs_git_repository(
     sha256 = "4e3429bc83182b4dc49a554a44067bd9453bd6c0827b08948b324d8a4bb3dea3",
     # sha256 = …
 )
+
+nixpkgs_cc_configure(repository = "@nixpkgs")
 
 load(
     "@rules_haskell//haskell:nixpkgs.bzl",
