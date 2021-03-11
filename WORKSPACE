@@ -83,8 +83,8 @@ load(
 # https://api.haskell.build/haskell/nixpkgs.html#haskell_register_ghc_nixpkgs
 haskell_register_ghc_nixpkgs(
     repository = "@nixpkgs",
-    attribute_path = "haskell.compiler.ghc8103",
-    version = "8.10.3",
+    attribute_path = "haskell.compiler.ghc883",
+    version = "8.8.3",
 )
 
 # For zlib.BUILD.bazel
